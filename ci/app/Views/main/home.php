@@ -2,17 +2,17 @@
     <section class="wrapper bg-soft-primary">
       <div class="container pt-10 pb-15 pt-md-14 pb-md-20">
         <div class="row gx-lg-8 gx-xl-12 gy-10 mb-5 align-items-center">
-          <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-5 text-center text-lg-start order-2 order-lg-0" data-cues="slideInDown" data-group="page-title" data-delay="600">
-            <h1 class="display-1 mb-5 mx-md-n5 mx-lg-0">Creative. Smart. Awesome.</h1>
-            <p class="lead fs-lg mb-7">We specialize in web, mobile and identity design. We love to turn ideas into beautiful things.</p>
+          <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-6 text-center text-lg-start order-2 order-lg-0" data-cues="slideInDown" data-group="page-title" data-delay="600">
+            <h1 class="display-1 mb-5 mx-md-n5 mx-lg-0">Transforming Lives Through Faith, Knowledge, and Compassion</h1>
+            <p class="lead fs-lg mb-7">We Empower Communities through Spiritual Growth, Academic Excellence, and Youth Welfare</p>
             <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
               <!-- <span><a class="btn btn-primary rounded me-2">See Projects</a></span> -->
-              <span><a class="btn btn-yellow rounded">Learn More</a></span>
+              <span><a class="btn btn-yellow rounded" href="<?=base_url('donate')?>">Support Us</a></span>
             </div>
           </div>
           <!-- /column -->
-          <div class="col-lg-7" data-cue="slideInDown">
-            <figure><img class="w-auto" src="./assets/img/illustrations/i6.png" srcset="./assets/img/illustrations/i6@2x.png 2x" alt="" /></figure>
+          <div class="col-lg-6" data-cue="slideInDown">
+            <figure><img class="w-auto" src="<?=base_url('assets/img/unity.png')?>" alt="" /></figure>
           </div>
           <!-- /column -->
         </div>
@@ -29,7 +29,7 @@
               <div class="card-body">
                 <img src="./assets/img/icons/lineal/browser.svg" class="svg-inject icon-svg icon-svg-md text-yellow mb-3" alt="" />
                 <h4>Spiritual upliftment</h4>
-                <p class="mb-2">We are saddled with the responsibility to ensure that the spiritual progress of our youth does not take the back seat but is at the front burner of society. This is achieved by instilling a high level of spirituality in them through our annual and monthly programs to make them better representatives of Islam.</p>
+                <p class="mb-2">We are saddled with the responsibility to ensure that the spiritual progress of our youth is at the front burner of society. This is achieved by instilling a high level of spirituality through our annual and monthly programs.</p>
                 <a href="#" class="more hover link-yellow">Learn More</a>
               </div>
               <!--/.card-body -->
@@ -80,10 +80,10 @@
         <!--/.row -->
         <div class="row gx-lg-8 gx-xl-12 gy-10 mb-14 mb-md-17 align-items-center">
           <div class="col-lg-5">
-            <figure><img class="w-auto" src="./assets/img/illustrations/i8.png" srcset="./assets/img/illustrations/i8@2x.png 2x" alt="" /></figure>
+            <figure><img class="w-auto" src="<?=base_url('assets/img/presentation.jpg')?>" alt="" /></figure>
           </div>
           <!--/column -->
-          <div class="col-lg-7">
+          <div class="col-lg-7" id="aboutPHF">
             <h3 class="display-4 mb-7">About PHF</h3>
             <div class="d-flex flex-row mb-6">
               <div>
@@ -99,7 +99,7 @@
         <!--/.row -->
         <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
           <div class="col-lg-7 order-lg-2">
-            <figure><img class="w-auto" src="./assets/img/illustrations/i2.png" srcset="./assets/img/illustrations/i2@2x.png 2x" alt="" /></figure>
+            <figure><img class="w-auto" src="<?=base_url('assets/img/unity.png')?>" alt="" /></figure>
           </div>
           <!--/column -->
           <div class="col-lg-5">

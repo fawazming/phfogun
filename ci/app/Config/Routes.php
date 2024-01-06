@@ -39,15 +39,17 @@ $routes->get('/', 'Main::index');
 $routes->get('/home', 'Main::index');
 $routes->get('/trials', 'Main::trials');
 
-$routes->get('/usrah', 'Main::usrah');
+$routes->get('/imf', 'Main::imf');
+$routes->get('/pass', 'Main::pass');
 $routes->get('/about', 'Main::about');
 $routes->get('/excos', 'Main::excos');
 $routes->get('/donate', 'Main::donate');
+$routes->get('/programmes', 'Main::programmes');
 $routes->get('/about-alqudwa', 'Main::aboutAlqudwa');
 
 
 $routes->get('/shop', 'Main::shop');
-$routes->get('/alqudwa', 'Main::alqudwa');
+$routes->get('/ourblog', 'Main::alqudwa');
 $routes->get('/blog/(:any)/(:any)/(:any)', 'Main::singleBlog/$1/$2/$3');
 
 /*

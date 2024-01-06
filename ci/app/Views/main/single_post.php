@@ -6,7 +6,7 @@
               <h1 class="display-1 mb-4 text-black"><?=$title?></h1>
               <ul class="post-meta mb-5">
                 <li class="post-date text-white"><i class="uil uil-calendar-alt"></i><span><?=$published?></span></li>
-                <li class="post-author text-white"><i class="uil uil-user"></i><span>MSSN Remo</span></li>
+                <li class="post-author text-white"><i class="uil uil-user"></i><span>PHF Ogun</span></li>
               </ul>
               <!-- /.post-meta -->
             </div>

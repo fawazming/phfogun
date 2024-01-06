@@ -5,16 +5,16 @@ namespace App\Controllers;
 class Main extends BaseController
 {
     // MSSN2023# 
-    // 8585963344503326343  // PHF: 8274183790677322710
-    // key:=>AIzaSyDyJNoiXSa4g7GcHKB4DOdSR5xvrNtZJls  //PHF:AIzaSyD-tkvtxixe1gm3hbr05upblw6P6HYzpKI
+    // 8274183790677322710  // PHF: 8274183790677322710
+    // key:=>AIzaSyD-tkvtxixe1gm3hbr05upblw6P6HYzpKI  //PHF:AIzaSyD-tkvtxixe1gm3hbr05upblw6P6HYzpKI
     // Google Photos:: https://photos.app.goo.gl/QfFx1CYivA1awaWu8
     // posts:: https://photos.app.goo.gl/hieLwmvYCXxzmoUB6
     //     APIS
-    // Single Page:: https://www.googleapis.com/blogger/v3/blogs/8585963344503326343/pages/2480526254607745?key=AIzaSyDyJNoiXSa4g7GcHKB4DOdSR5xvrNtZJls
+    // Single Page:: https://www.googleapis.com/blogger/v3/blogs/8274183790677322710/pages/2480526254607745?key=AIzaSyD-tkvtxixe1gm3hbr05upblw6P6HYzpKI
 
-    // All Pages:: https://www.googleapis.com/blogger/v3/blogs/8585963344503326343/pages?key=AIzaSyDyJNoiXSa4g7GcHKB4DOdSR5xvrNtZJls
+    // All Pages:: https://www.googleapis.com/blogger/v3/blogs/8274183790677322710/pages?key=AIzaSyD-tkvtxixe1gm3hbr05upblw6P6HYzpKI
 
-    // public $ALLPOSTS = "https://www.googleapis.com/blogger/v3/blogs/8585963344503326343/posts?key=AIzaSyDyJNoiXSa4g7GcHKB4DOdSR5xvrNtZJls";
+    // public $ALLPOSTS = "https://www.googleapis.com/blogger/v3/blogs/8274183790677322710/posts?key=AIzaSyD-tkvtxixe1gm3hbr05upblw6P6HYzpKI";
 
     // Search Posts:: https://www.googleapis.com/blogger/v3/blogs/blogId/posts/search?q=query terms
 
@@ -23,27 +23,27 @@ class Main extends BaseController
         $jsonld = '
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "MSSN Remo",
-          "description": "Official website of MSSN Remo, promoting Islamic knowledge and values among students in Remo(Sagamu, Ikenne, Iperu...)",
-          "url": "https://www.mssnremo.com.ng/",
-          "logo": "https://new.mssnremo.com.ng/assets/img/mssnremologo.webp",
+          "name": "Pure Heart Islamic Foundation, Ogun State",
+          "description": "Discover empowerment, education, and community impact with Pure Heart Islamic Foundation Ogun State. Join us in addressing unique challenges, nurturing minds, and celebrating positive change",
+          "url": "https://www.phfogun.org.ng/",
+          "logo": "https://phfogun.org.ng/assets/img/phf_logo.png",
           "sameAs": [
-            "https://www.facebook.com/mssnremo",
-            "https://twitter.com/mssnremo",
-            "https://www.instagram.com/mssnremo"
+            "https://www.facebook.com/phfogun.org",
+            "https://twitter.com/phfogun",
+            "https://www.instagram.com/phf_ogun"
           ],
           "contactPoint": [
             {
               "@type": "ContactPoint",
-              "telephone": "+2349031306022",
-              "contactType": "Student support"
+              "telephone": "+2348161188334",
+              "contactType": "Support"
             }
           ],
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "12, Abiodun Ogunyanwo St.",
-            "addressLocality": "Sagamu, Ogun State",
-            "postalCode": "121101",
+            "streetAddress": "Istijaba Central Mosque, Behind Health Centre, Obada-Oko",
+            "addressLocality": "Abeokuta, Ogun State",
+            "postalCode": "110101",
             "addressCountry": "NG"
           }
         ';
@@ -54,16 +54,24 @@ class Main extends BaseController
             // 'smposts'=>json_decode($smposts->getBody()),
             'smposts'=>[],
         ];
-        echo view('main/header', ['title'=>"PHF Ogun", 'desc'=>"Welcome to our official page", 'jsonld'=>$jsonld]);
+        echo view('main/header', ['title'=>"Pure Heart Islamic Foundation, Ogun State Chapter|| PHF Ogun", 'desc'=>"Discover empowerment, education, and community impact with Pure Heart Islamic Foundation Ogun State. Join us in addressing unique challenges, nurturing minds, and celebrating positive change", 'jsonld'=>$jsonld]);
         echo view('main/home', $homedata);
         echo view('main/footer');
     }
 
-    public function usrah()
+    public function imf()
     {
         $jsonld = '';
-        echo view('main/header', ['title'=>"MSSN Remo || Weekly Usrah", 'desc'=>"Weekly programme for everybody", 'jsonld'=>$jsonld]);
-        echo view('main/pages', $this->loadPage('2480526254607745'));
+        echo view('main/header', ['title'=>"PHF Ogun || Weekly IMF", 'desc'=>"Immerse yourself in a journey of spiritual growth and knowledge at our Weekly Islamic Modelling Forum (IMF)", 'jsonld'=>$jsonld]);
+        echo view('main/pages', $this->loadPostASPage('2024/01/imf.html'));
+        echo view('main/footer');
+    }
+
+    public function pass()
+    {
+        $jsonld = '';
+        echo view('main/header', ['title'=>"PHF Ogun || Annual PASS", 'desc'=>"Experience empowerment, growth, and connection at our flagship event, the Pure Heart Annual Sister's Summit (PASS). This annual gathering is a catalyst for positive change, bringing together Muslim women to delve into crucial discussions spanning health, religion, social issues, and education", 'jsonld'=>$jsonld]);
+        echo view('main/pages', $this->loadPostASPage('2024/01/pass.html'));
         echo view('main/footer');
     }
 
@@ -71,7 +79,7 @@ class Main extends BaseController
     public function about()
     {
         $jsonld = '';
-        echo view('main/header', ['title'=>"About MSSN Remo", 'desc'=>"Learn more about us", 'jsonld'=>$jsonld]);
+        echo view('main/header', ['title'=>"About PHF Ogun", 'desc'=>"Learn more about us", 'jsonld'=>$jsonld]);
         echo view('main/pages', $this->loadPage('8976108313562892464'));
         echo view('main/footer');
     }
@@ -79,16 +87,24 @@ class Main extends BaseController
     public function excos()
     {
         $jsonld = '';
-        echo view('main/header', ['title'=>"About MSSN Remo Executives", 'desc'=>"Learn more about our executives", 'jsonld'=>$jsonld]);
-        echo view('main/pages', $this->loadPage('603951292426024454'));
+        echo view('main/header', ['title'=>"About PHF Ogun Executives", 'desc'=>"Learn more about our executives", 'jsonld'=>$jsonld]);
+        echo view('main/pages', $this->loadPostASPage('2024/01/excos.html'));
         echo view('main/footer');
     }
 
     public function donate()
     {
         $jsonld = '';
-        echo view('main/header', ['title'=>"Support Our Noble Cause || MSSN Remo", 'desc'=>"No amount is small", 'jsonld'=>$jsonld]);
-        echo view('main/pages', $this->loadPage('6840498145856313383'));
+        echo view('main/header', ['title'=>"Support Our Noble Cause || PHF Ogun", 'desc'=>"No amount is small", 'jsonld'=>$jsonld]);
+        echo view('main/pages', $this->loadPostASPage('2024/01/donate.html'));
+        echo view('main/footer');
+    }
+
+    public function programmes()
+    {
+        $jsonld = '';
+        echo view('main/header', ['title'=>"Our Programmes || PHF Ogun", 'desc'=>"Official Website", 'jsonld'=>$jsonld]);
+        echo view('main/pages', $this->loadPostASPage('2024/01/programmes.html'));
         echo view('main/footer');
     }
 
@@ -103,8 +119,8 @@ class Main extends BaseController
     public function alqudwa()
     {
         $jsonld = '';
-        $blogURL = "https://www.googleapis.com/blogger/v3/blogs/8585963344503326343/posts?key=AIzaSyDyJNoiXSa4g7GcHKB4DOdSR5xvrNtZJls";
-        echo view('main/header', ['title'=>"Al-Qudwa Publications || MSSN Remo", 'desc'=>"Read and learn more as it is an obligation from cradle to grave", 'jsonld'=>$jsonld]);
+        $blogURL = "https://www.googleapis.com/blogger/v3/blogs/8274183790677322710/posts?key=AIzaSyD-tkvtxixe1gm3hbr05upblw6P6HYzpKI";
+        echo view('main/header', ['title'=>"Our Blog || PHF Ogun", 'desc'=>"Read and learn more as it is an obligation from cradle to grave", 'jsonld'=>$jsonld]);
         echo view('main/blogs', ['blogs'=>$this->loadContent($blogURL)->items,]);
         echo view('main/footer');
     }
@@ -112,7 +128,7 @@ class Main extends BaseController
     public function singleBlog($y,$m,$t)
     {
         $path = $y.'/'.$m.'/'.$t;
-        $url = 'https://www.googleapis.com/blogger/v3/blogs/8585963344503326343/posts/bypath?path=/'.$path.'&key=AIzaSyDyJNoiXSa4g7GcHKB4DOdSR5xvrNtZJls';
+        $url = 'https://www.googleapis.com/blogger/v3/blogs/8274183790677322710/posts/bypath?path=/'.$path.'&key=AIzaSyD-tkvtxixe1gm3hbr05upblw6P6HYzpKI';
         $res = $this->loadContent($url);
         $re = '/<img[^>]+src=[\'"]([^\'"]+)[\'"][^>]*>/i';preg_match($re, $res->content, $matches, PREG_OFFSET_CAPTURE, 0); $extractedIMG = $matches[1][0];
         $cleanText = preg_replace('/<(?:[^"\'>]|".*?"|\'.*?\')*>|<\/?[a-zA-Z]+\b[^>]*>|[\r\n\t]+/s', '', $res->content);
@@ -125,14 +141,14 @@ class Main extends BaseController
             "dateModified": "'.$res->updated.'",
             "author": {
                 "@type": "Person",
-                "name": "MSSN Remo"
+                "name": "PHF Ogun"
             },
             "publisher": {
                 "@type": "Organization",
-                "name": "Al-Qudwa",
+                "name": "PHF Ogun",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://new.mssnremo.com.ng/assets/img/mssnremologo.webp"
+                    "url": "https://phfogun.org.ng/assets/img/phf_logo.png"
                 }
             },
             "description": "'.substr($cleanText, 0, 300).'",
@@ -146,14 +162,21 @@ class Main extends BaseController
             'title' => $res->title,
             'content' => $res->content,
         ];
-        echo view('main/header', ['title'=>$data['title']."|| Al-Qudwa Publications || MSSN Remo", 'desc'=>"Read and learn more as it is an obligation from cradle to grave", 'jsonld'=>$jsonld]);
+        echo view('main/header', ['title'=>$data['title']."|| PHF Ogun", 'desc'=>"Read and learn more as it is an obligation from cradle to grave", 'jsonld'=>$jsonld]);
         echo view('main/single_post', $data);
         echo view('main/footer');
     }
 
     public function loadPage($pageID)
     {
-        $url = 'https://www.googleapis.com/blogger/v3/blogs/8585963344503326343/pages/'.$pageID.'?key=AIzaSyDyJNoiXSa4g7GcHKB4DOdSR5xvrNtZJls';
+        $url = 'https://www.googleapis.com/blogger/v3/blogs/8274183790677322710/pages/'.$pageID.'?key=AIzaSyD-tkvtxixe1gm3hbr05upblw6P6HYzpKI';
+        $res = $this->loadContent($url);
+        return ['title'=>$res->title, 'content'=>$res->content];
+    }
+
+    public function loadPostASPage($path)
+    {
+        $url = 'https://www.googleapis.com/blogger/v3/blogs/4537884138680196479/posts/bypath?path=/'.$path.'&key=AIzaSyD-tkvtxixe1gm3hbr05upblw6P6HYzpKI';
         $res = $this->loadContent($url);
         return ['title'=>$res->title, 'content'=>$res->content];
     }
@@ -162,6 +185,7 @@ class Main extends BaseController
     {
         $client = \Config\Services::curlrequest();
         $response = $client->request('GET', $url);
+        // dd($response->getBody());
         return json_decode($response->getBody());
     }
 
@@ -170,7 +194,7 @@ class Main extends BaseController
     {
         // $client = \Config\Services::curlrequest();
 
-        // $response = $client->request('GET', "https://www.googleapis.com/blogger/v3/blogs/8585963344503326343/posts?key=AIzaSyDyJNoiXSa4g7GcHKB4DOdSR5xvrNtZJls");
+        // $response = $client->request('GET', "https://www.googleapis.com/blogger/v3/blogs/8274183790677322710/posts?key=AIzaSyD-tkvtxixe1gm3hbr05upblw6P6HYzpKI");
         // var_dump(json_decode($response->getBody())->items );
     }
 }

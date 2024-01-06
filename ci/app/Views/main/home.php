@@ -3,13 +3,13 @@
       <div class="swiper-container swiper-hero dots-over" data-margin="0" data-autoplay="true" data-autoplaytime="7000" data-nav="true" data-dots="true" data-items="1">
         <div class="swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg7.jpg">
+            <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="<?= base_url('assets/img/intlGirls.jpg')?>">
               <div class="container h-100">
                 <div class="row h-100">
                   <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start">
-                    <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">We bring solutions to make life easier.</h2>
-                    <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">We are a creative company that focuses on long term relationships with customers.</p>
-                    <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="#" class="btn btn-lg btn-outline-white rounded-pill">Read More</a></div>
+                    <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">Academic Excellence</h2>
+                    <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">We believe in providing quality education to nurture bright minds and shape a better future</p>
+                    <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="<?=base_url('programmes')?>" class="btn btn-lg btn-outline-white rounded-pill">Read More</a></div>
                   </div>
                   <!--/column -->
                 </div>
@@ -18,13 +18,13 @@
               <!--/.container -->
             </div>
             <!--/.swiper-slide -->
-            <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg8.jpg">
+            <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="<?= base_url('assets/img/prison_visit.jpg')?>">
               <div class="container h-100">
                 <div class="row h-100">
                   <div class="col-md-11 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center justify-content-center align-self-center">
-                    <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">We are trusted by over a million customers.</h2>
-                    <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">Here a few reasons why our customers choose us.</p>
-                    <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="./assets/media/movie.mp4" class="btn btn-circle btn-white btn-play ripple mx-auto mb-5" data-glightbox><i class="icn-caret-right"></i></a></div>
+                    <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">Empowering Communities</h2>
+                    <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">Our volunteers work tirelessly to make a positive impact in the lives of those in need.</p>
+                    <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="<?=base_url('programmes')?>" class="btn btn-lg btn-white btn-play ripple">Read More</a></div>
                   </div>
                   <!--/column -->
                 </div>
@@ -33,13 +33,13 @@
               <!--/.container -->
             </div>
             <!--/.swiper-slide -->
-            <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg9.jpg">
+            <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="<?= base_url('assets/img/pass2.jpg')?>">
               <div class="container h-100">
                 <div class="row h-100">
                   <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-5 col-xl-6 offset-xl-6 col-xxl-5 offset-xxl-6 text-center text-lg-start justify-content-center align-self-center align-items-start">
-                    <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">Just sit and relax.</h2>
-                    <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">We make sure your spending is stress free so that you can have the perfect control.</p>
-                    <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="#" class="btn btn-lg btn-outline-white rounded-pill">Contact Us</a></div>
+                    <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">Building Strong Personalities</h2>
+                    <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">Fostering character development among the youth for a brighter tomorrow</p>
+                    <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="<?=base_url('programmes')?>" class="btn btn-lg btn-outline-white rounded-pill">Join Us</a></div>
                   </div>
                   <!--/column -->
                 </div>
@@ -213,13 +213,25 @@
           <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
             <!-- <h2 class="fs-15 text-uppercase text-muted mb-3">Latest Projects</h2> -->
             <h3 class="display-4">Check out our <span class="underline-3 style-2 yellow">recent social media</span> posts</h3>
-            <p class="fs-15 text-muted mb-3">Download and share with your contacts</p>
+            <!-- <p class="fs-15 text-muted mb-3">Download and share with your contacts</p> -->
           </div>
           <!-- /column -->
         </div>
         <!-- /.row -->
-        <div class="d-flex justify-content-center">
+        <div class="row align-items-center my-5">
+          <div class="d-none d-md-block col-md-4">
+            <div class="widget">
+              <h3 class="h2 mb-3 ">Get Involved Today</h3>
+              <p class="lead mb-5">Whether you choose to attend our programs, volunteer your time, or contribute in other ways, your involvement matters. Be a part of PHF Ogun's initiatives and help us build a stronger, more empowered community.</p>
+              <a href="https://fb.com/phfogun.org" target="_blank" class="btn btn-primary rounded-pill">Join Us</a>
+            </div>
+            <!-- /.widget -->
+          </div>
+        <div class="d-none d-md-block col-md-2"></div>
+        <div class="col-12 col-md-6">
           <div class="fb-page" data-href="https://www.facebook.com/phfogun.org" data-tabs="timeline" data-width="500" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/phfogun.org" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/phfogun.org">Pure Heart Islamic Foundation Ogun State.</a></blockquote></div>
+        </div>
+          
         </div>
         
         <!-- /.swiper-container -->

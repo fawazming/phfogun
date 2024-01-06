@@ -13,6 +13,13 @@
   <link rel="stylesheet" href="<?=base_url('assets/css/plugins.css')?>">
   <link rel="stylesheet" href="<?=base_url('assets/css/style.css')?>">
   <link rel="stylesheet" href="<?=base_url('assets/css/navy.css')?>">
+  <meta property="og:title" content="Pure Heart Islamic Foundation Ogun State">
+  <meta property="og:description" content="Empowering Muslim, nurturing youth, and celebrating positive change in Ogun State. Join our trusted community for a brighter future.">
+  <meta property="og:image" content="https://phfogun.org.ng/assets/img/phf_logo.png">
+  <meta property="og:url" content="https://phfogun.org.ng">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
   <script type="application/ld+json">
     {
         <?=$jsonld?>
@@ -48,12 +55,13 @@
                 </li>
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Programmes</a>
                   <ul class="dropdown-menu">
-                    <li class="nav-item"><a class="dropdown-item" href="<?=base_url('usrah')?>">IMF</a></li>
-                    <li class="nav-item"><a class="dropdown-item" href="#">PASS</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="<?=base_url('imf')?>">IMF</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="<?=base_url('pass')?>">PASS</a></li>
                     <li class="nav-item"><a class="dropdown-item" href="https://quiz.phfogun.org.ng">Monthly Quiz</a></li>
                   </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="https://camp.phfogun.org.ng">PMC</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?=base_url('ourblog')?>">Our Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?=base_url('donate')?>">Donate</a></li>
                 <!-- <li class="nav-item"><a class="nav-link" href="<?=base_url('shop')?>">Shop</a></li> -->
               </ul>

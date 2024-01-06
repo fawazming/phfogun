@@ -24,7 +24,7 @@
                   <?php $cleanText = preg_replace('/<(?:[^"\'>]|".*?"|\'.*?\')*>|<\/?[a-zA-Z]+\b[^>]*>|[\r\n\t]+/s', '', $blog->content);?>
                   <article class="item post col-md-6">
                     <div class="card">
-                      <figure class="card-img-top overlay overlay-1 hover-scale"><a href="blog/<?=substr($blog->url, 29)?>"> <img src="<?=$extractedIMG?>" alt="" /></a>
+                      <figure class="card-img-top overlay overlay-1 hover-scale"><a href="blog/<?=substr($blog->url, 28)?>"> <img src="<?=$extractedIMG?>" alt="" /></a>
                         <figcaption>
                           <h5 class="from-top mb-0">Read More</h5>
                         </figcaption>
@@ -32,7 +32,7 @@
                       <div class="card-body">
                         <div class="post-header">
                           <!-- /.post-category -->
-                          <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="blog/<?=substr($blog->url, 29)?>"><?=$blog->title?></a></h2>
+                          <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="blog/<?=substr($blog->url, 28)?>"><?=$blog->title?></a></h2>
                           <ul class="post-meta d-flex mb-0">
                             <li class="post-date"><i class="uil uil-calendar-alt"></i><span><?=explode('T', $blog->updated)[0] ?></span></li>
                             

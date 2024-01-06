@@ -1,36 +1,71 @@
-
-    <section class="wrapper bg-soft-primary">
-      <div class="container pt-10 pb-15 pt-md-14 pb-md-20">
-        <div class="row gx-lg-8 gx-xl-12 gy-10 mb-5 align-items-center">
-          <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-6 text-center text-lg-start order-2 order-lg-0" data-cues="slideInDown" data-group="page-title" data-delay="600">
-            <h1 class="display-1 mb-5 mx-md-n5 mx-lg-0">Transforming Lives Through Faith, Knowledge, and Compassion</h1>
-            <p class="lead fs-lg mb-7">We Empower Communities through Spiritual Growth, Academic Excellence, and Youth Welfare</p>
-            <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
-              <!-- <span><a class="btn btn-primary rounded me-2">See Projects</a></span> -->
-              <span><a class="btn btn-yellow rounded" href="<?=base_url('donate')?>">Support Us</a></span>
+    <!-- /header -->
+    <section class="wrapper bg-dark">
+      <div class="swiper-container swiper-hero dots-over" data-margin="0" data-autoplay="true" data-autoplaytime="7000" data-nav="true" data-dots="true" data-items="1">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg7.jpg">
+              <div class="container h-100">
+                <div class="row h-100">
+                  <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start">
+                    <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">We bring solutions to make life easier.</h2>
+                    <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">We are a creative company that focuses on long term relationships with customers.</p>
+                    <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="#" class="btn btn-lg btn-outline-white rounded-pill">Read More</a></div>
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.container -->
             </div>
+            <!--/.swiper-slide -->
+            <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg8.jpg">
+              <div class="container h-100">
+                <div class="row h-100">
+                  <div class="col-md-11 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center justify-content-center align-self-center">
+                    <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">We are trusted by over a million customers.</h2>
+                    <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">Here a few reasons why our customers choose us.</p>
+                    <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="./assets/media/movie.mp4" class="btn btn-circle btn-white btn-play ripple mx-auto mb-5" data-glightbox><i class="icn-caret-right"></i></a></div>
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.container -->
+            </div>
+            <!--/.swiper-slide -->
+            <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg9.jpg">
+              <div class="container h-100">
+                <div class="row h-100">
+                  <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-5 col-xl-6 offset-xl-6 col-xxl-5 offset-xxl-6 text-center text-lg-start justify-content-center align-self-center align-items-start">
+                    <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">Just sit and relax.</h2>
+                    <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">We make sure your spending is stress free so that you can have the perfect control.</p>
+                    <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="#" class="btn btn-lg btn-outline-white rounded-pill">Contact Us</a></div>
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.container -->
+            </div>
+            <!--/.swiper-slide -->
           </div>
-          <!-- /column -->
-          <div class="col-lg-6" data-cue="slideInDown">
-            <figure><img class="w-auto" src="<?=base_url('assets/img/unity.png')?>" alt="" /></figure>
-          </div>
-          <!-- /column -->
+          <!--/.swiper-wrapper -->
         </div>
-        <!-- /.row -->
+        <!-- /.swiper -->
       </div>
-      <!-- /.container -->
+      <!-- /.swiper-container -->
     </section>
     <!-- /section -->
     <section class="wrapper bg-light">
-      <div class="container py-14 py-md-16 pb-md-17">
-        <div class="row gx-md-5 gy-5 mt-n18 mt-md-n21 mb-14 mb-md-17">
+      <div class="container py-15">
+        <div class="row gx-md-5 gy-5 mt-n15 mt-md-n15 mb-md-17">
           <div class="col-md-6 col-xl-3">
             <div class="card shadow-lg card-border-bottom border-soft-yellow">
-              <div class="card-body">
-                <img src="./assets/img/icons/lineal/browser.svg" class="svg-inject icon-svg icon-svg-md text-yellow mb-3" alt="" />
+              <div class="card-body pb-2">
+                <img src="./assets/img/spiritual.png" class="svg-inject icon-svg icon-svg-md text-yellow mb-3" alt="" />
                 <h4>Spiritual upliftment</h4>
                 <p class="mb-2">We are saddled with the responsibility to ensure that the spiritual progress of our youth is at the front burner of society. This is achieved by instilling a high level of spirituality through our annual and monthly programs.</p>
-                <a href="#" class="more hover link-yellow">Learn More</a>
+                <!-- <a href="#" class="more hover link-yellow">Learn More</a> -->
               </div>
               <!--/.card-body -->
             </div>
@@ -40,10 +75,10 @@
           <div class="col-md-6 col-xl-3">
             <div class="card shadow-lg card-border-bottom border-soft-green">
               <div class="card-body">
-                <img src="./assets/img/icons/lineal/chat-2.svg" class="svg-inject icon-svg icon-svg-md text-green mb-3" alt="" />
+                <img src="./assets/img/academic.png" class="svg-inject icon-svg icon-svg-md text-green mb-3" alt="" />
                 <h4>Academic Excellence</h4>
                 <p class="mb-2">We create an avenue for opportunities, academic growth, and skill development of our youth through our programs, lectures, and conferences to ensure progress in the education parlance.</p>
-                <a href="#" class="more hover link-green">Learn More</a>
+                <!-- <a href="#" class="more hover link-green">Learn More</a> -->
               </div>
               <!--/.card-body -->
             </div>
@@ -53,10 +88,10 @@
           <div class="col-md-6 col-xl-3">
             <div class="card shadow-lg card-border-bottom border-soft-orange">
               <div class="card-body">
-                <img src="./assets/img/icons/lineal/id-card.svg" class="svg-inject icon-svg icon-svg-md text-orange mb-3" alt="" />
+                <img src="./assets/img/welfare.png" class="svg-inject icon-svg icon-svg-md text-orange mb-3" alt="" />
                 <h4>Welfarism of the people</h4>
                 <p class="mb-2">Welfarism of the Muslim ummah is our core priority especially the youth being at the center. We ensure adequate provision and support for our members financially and morally.</p>
-                <a href="#" class="more hover link-orange">Learn More</a>
+                <!-- <a href="#" class="more hover link-orange">Learn More</a> -->
               </div>
               <!--/.card-body -->
             </div>
@@ -65,11 +100,11 @@
           <!--/column -->
           <div class="col-md-6 col-xl-3">
             <div class="card shadow-lg card-border-bottom border-soft-blue">
-              <div class="card-body">
-                <img src="./assets/img/icons/lineal/gift.svg" class="svg-inject icon-svg icon-svg-md text-blue mb-3" alt="" />
+              <div class="card-body pb-md-12">
+                <img src="./assets/img/personality.png" class="svg-inject icon-svg icon-svg-md text-blue mb-3" alt="" />
                 <h4>Building a strong Personality of Muslim youth</h4>
-                <p class="mb-2">It is our pride to develop vibrant and ambitious youths who will take up the mantle of leadership in various fields in the future</p>
-                <a href="#" class="more hover link-blue">Learn More</a>
+                <p class="mb-2 pb-4">It is our pride to develop vibrant and ambitious youths who will take up the mantle of leadership in various fields in the future</p>
+                <!-- <a href="#" class="more hover link-blue">Learn More</a> -->
               </div>
               <!--/.card-body -->
             </div>
@@ -77,8 +112,7 @@
           </div>
           <!--/column -->
         </div>
-        <!--/.row -->
-        <div class="row gx-lg-8 gx-xl-12 gy-10 mb-14 mb-md-17 align-items-center">
+        <div class="row gx-lg-8 gx-xl-12 gy-10 mb-2 align-items-center">
           <div class="col-lg-5">
             <figure><img class="w-auto" src="<?=base_url('assets/img/presentation.jpg')?>" alt="" /></figure>
           </div>
@@ -96,7 +130,11 @@
           </div>
           <!--/column -->
         </div>
-        <!--/.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <section class="wrapper bg-soft-primary">
+      <div class="container py-md-14">
         <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
           <div class="col-lg-7 order-lg-2">
             <figure><img class="w-auto" src="<?=base_url('assets/img/unity.png')?>" alt="" /></figure>
@@ -152,9 +190,7 @@
           </div>
           <!--/column -->
         </div>
-        <!--/.row -->
       </div>
-      <!-- /.container -->
     </section>
     <section class="wrapper" style="background-image:url(assets/img/bg.jpg); background-position: center; background-size: cover;">
       <div class="container py-10 py-md-12 text-center">
@@ -172,7 +208,7 @@
     </section>
     <!-- /section -->
     <section class="wrapper bg-light">
-      <div class="container pt-10 pb-14 pb-md-16">
+      <div class="container pt-10 pb-5 ">
         <div class="row">
           <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
             <!-- <h2 class="fs-15 text-uppercase text-muted mb-3">Latest Projects</h2> -->
@@ -182,24 +218,10 @@
           <!-- /column -->
         </div>
         <!-- /.row -->
-        <div class="swiper-container grid-view mb-6" data-margin="30" data-dots="true" data-items-xl="3" data-items-md="2" data-items-xs="1">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <?php foreach ($smposts as $k => $smpost): ?>
-              <?php if ($k==0):?>
-              <?php else: ?>
-              <div class="swiper-slide">
-                <figure class="rounded mb-6"><img src="<?=$smpost?>" srcset="<?=$smpost?>" alt="" /><a class="item-link" href="<?=$smpost?>" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
-                <!-- /.project-details -->
-              </div>
-              <!--/.swiper-slide -->
-            <?php endif; ?>
-            <?php endforeach; ?>
-            </div>
-            <!--/.swiper-wrapper -->
-          </div>
-          <!-- /.swiper -->
+        <div class="d-flex justify-content-center">
+          <div class="fb-page" data-href="https://www.facebook.com/phfogun.org" data-tabs="timeline" data-width="500" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/phfogun.org" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/phfogun.org">Pure Heart Islamic Foundation Ogun State.</a></blockquote></div>
         </div>
+        
         <!-- /.swiper-container -->
       </div>
       <!-- /.container -->

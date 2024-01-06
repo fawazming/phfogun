@@ -4,7 +4,7 @@
     <div class="row gy-6 gy-lg-0">
       <div class="col-md-4">
         <div class="widget">
-          <img class="mb-4" src="<?=base_url('assets/img/phf_logo.png')?>" width="150px" style="background-blend-mode: multiply;" alt="" />
+          <img class="mb-4" src="<?=base_url('assets/img/phf_logo_dark.png')?>" width="150px" style="background-blend-mode: multiply;" alt="" />
           <p class="mb-4">© 2023 PHF Ogun <br class="d-none d-lg-block" />All rights reserved.</p>
           <nav class="nav social social-white">
             <a href="https://twitter.com/mssnremo"><i class="uil uil-twitter"></i></a>
@@ -20,8 +20,8 @@
       <div class="col-md-4">
         <div class="widget">
           <h4 class="widget-title text-white mb-3">Get in Touch</h4>
-          <address class="pe-xl-15 pe-xxl-17">21, Ajegunle Str. Sagamu, Ogun State</address>
-          <a href="mailto:mssnremoareacouncil@gmail.com">mssnremoareacouncil@gmail.com</a><br /> +234 903 1306 022
+          <address class="pe-xl-15 pe-xxl-17">Istijaba Central Mosque, Behind Health Centre, Obada-Oko, Abeokuta Ogun State</address>
+          <a href="mailto:mssnremoareacouncil@gmail.com">phfogun@gmail.com</a><br /> +234 906 564 4640
         </div>
         <!-- /.widget -->
       </div>
@@ -29,10 +29,10 @@
       <div class="col-md-4">
         <div class="widget">
           <h4 class="widget-title text-white mb-3">Learn More</h4>
-          <ul class="list-unstyled  mb-0">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Ask Ustadh</a></li>
-            <li><a href="#">Sponsor a Program</a></li>
+          <ul class="list-unstyled mb-0">
+            <li><a href="https://quiz.phfogun.org.ng">PHFOgun Quiz</a></li>
+            <li><a href="https://camp.phfogun.org.ng">PMC</a></li>
+            <li><a href="https://">Sponsor a Program</a></li>
             <li><a href="https://drive.google.com/file/d/1t0VBkQt6gfJDsOVayliZK48zv6Cj6d91/view?usp=sharing">Download Al-Mathuraat</a></li>
           </ul>
         </div>

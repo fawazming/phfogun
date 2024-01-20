@@ -76,6 +76,42 @@ class Main extends BaseController
     }
 
 
+    public function tday()
+    {
+        $jsonld = '';
+        echo view('main/header', ['title'=>"PHF Ogun || Annual Teachers Day", 'desc'=>"We celebrate the builders of our nation", 'jsonld'=>$jsonld]);
+        echo view('main/pages', $this->loadPostASPage('2024/01/teachers.html'));
+        echo view('main/footer');
+    }
+
+
+    public function ampal()
+    {
+        $jsonld = '';
+        echo view('main/header', ['title'=>"PHF Ogun || AMPAL", 'desc'=>"Assembly of Muslim Prefect and Leaders in Private and Public Schools in Ogun State", 'jsonld'=>$jsonld]);
+        echo view('main/pages', $this->loadPostASPage('2024/01/ampal.html'));
+        echo view('main/footer');
+    }
+
+
+    public function gday()
+    {
+        $jsonld = '';
+        echo view('main/header', ['title'=>"PHF Ogun || International Girls Day", 'desc'=>"International Girls Day", 'jsonld'=>$jsonld]);
+        echo view('main/pages', $this->loadPostASPage('2024/01/girlsday.html'));
+        echo view('main/footer');
+    }
+
+
+    public function phfquiz()
+    {
+        $jsonld = '';
+        echo view('main/header', ['title'=>"PHF Ogun || Monthly PHF Quiz", 'desc'=>"Monthly Islamic Quiz", 'jsonld'=>$jsonld]);
+        echo view('main/pages', $this->loadPostASPage('2024/01/quiz.html'));
+        echo view('main/footer');
+    }
+    
+
     public function about()
     {
         $jsonld = '';
@@ -105,6 +141,14 @@ class Main extends BaseController
         $jsonld = '';
         echo view('main/header', ['title'=>"Our Programmes || PHF Ogun", 'desc'=>"Official Website", 'jsonld'=>$jsonld]);
         echo view('main/pages', $this->loadPostASPage('2024/01/programmes.html'));
+        echo view('main/footer');
+    }
+
+    public function gallery()
+    {
+        $jsonld = '';
+        echo view('main/header', ['title'=>"Our News Photo || PHF Ogun", 'desc'=>"Our photos speaks louder than voice", 'jsonld'=>$jsonld]);
+        echo view('main/gallery');
         echo view('main/footer');
     }
 

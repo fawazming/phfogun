@@ -45,6 +45,11 @@ $routes->get('/about', 'Main::about');
 $routes->get('/excos', 'Main::excos');
 $routes->get('/donate', 'Main::donate');
 $routes->get('/programmes', 'Main::programmes');
+$routes->get('/gallery', 'Main::gallery');
+$routes->get('/teachersday', 'Main::tday');
+$routes->get('/girlsday', 'Main::gday');
+$routes->get('/ampal', 'Main::ampal');
+$routes->get('/phfquiz', 'Main::phfquiz');
 $routes->get('/about-alqudwa', 'Main::aboutAlqudwa');
 
 

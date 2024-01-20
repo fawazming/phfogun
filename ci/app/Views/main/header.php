@@ -55,24 +55,27 @@
                 </li>
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Programmes</a>
                   <ul class="dropdown-menu">
-                    <li class="nav-item"><a class="dropdown-item" href="<?=base_url('imf')?>">IMF</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="<?=base_url('imf')?>">I M F</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="<?=base_url('ampal')?>">AMPAL</a></li>
                     <li class="nav-item"><a class="dropdown-item" href="<?=base_url('pass')?>">PASS</a></li>
-                    <li class="nav-item"><a class="dropdown-item" href="https://quiz.phfogun.org.ng">Monthly Quiz</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="<?=base_url('phfquiz')?>">Monthly Quiz</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="<?=base_url('girlsday')?>">Intl Girls Day</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="<?=base_url('teachersday')?>">Teacher's Day</a></li>
                   </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="https://camp.phfogun.org.ng">PMC</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?=base_url('ourblog')?>">Our Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?=base_url('donate')?>">Donate</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="<?=base_url('shop')?>">Shop</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="<?=base_url('gallery')?>">Gallery</a></li>
               </ul>
               <!-- /.navbar-nav -->
               <div class="d-lg-none mt-auto pt-6 pb-6 order-4">
-                <a href="mailto:phfogunweb@gmail.com">phfogunweb@gmail.com</a><br /> +234 *** **** ***<br />
+                <a href="mailto:phfogunweb@gmail.com">phfogunweb@gmail.com</a><br /><br />
                 <nav class="nav social social-white mt-4">
-                  <a href="https://twitter.com/phfogun.org" target="_blank"><i class="uil uil-twitter"></i></a>
+                  <a href="https://twitter.com/ogunphf" target="_blank"><i class="uil uil-twitter"></i></a>
                   <a href="https://facebook.com/phfogun.org" target="_blank"><i class="uil uil-facebook-f"></i></a>
-                  <a href="https://instagram.com/phfogun.org" target="_blank"><i class="uil uil-instagram"></i></a>
-                  <a href="https://wa.me/234" target="_blank"><i class="uil uil-whatsapp"></i></a>
+                  <a href="https://www.instagram.com/phf_ogun/" target="_blank"><i class="uil uil-instagram"></i></a>
+                  <a href="https://chat.whatsapp.com/1J1CSrbQRFgFU7zRl6DhD1" target="_blank"><i class="uil uil-whatsapp"></i></a>
                 </nav>
                 <!-- /.social -->
               </div>
@@ -83,10 +86,10 @@
           <!-- /.navbar-collapse -->
           <div class="navbar-other ms-lg-4">
             <ul class="navbar-nav flex-row align-items-center ms-auto">
-              <li class="nav-item d-none d-md-block"><a href="https://twitter.com/phfogun.org" target="_blank"><i class="uil uil-twitter"></i></a></li>
+              <li class="nav-item d-none d-md-block"><a href="https://twitter.com/ogunphf" target="_blank"><i class="uil uil-twitter"></i></a></li>
               <li class="nav-item d-none d-md-block"><a href="https://facebook.com/phfogun.org" target="_blank"><i class="uil uil-facebook-f"></i></a></li>
-              <li class="nav-item d-none d-md-block"><a href="https://instagram.com/phfogun.org" target="_blank"><i class="uil uil-instagram"></i></a></li>
-              <li class="nav-item d-none d-md-block"><a href="https://wa.me/2349031306022" target="_blank"><i class="uil uil-whatsapp"></i></a></li>
+              <li class="nav-item d-none d-md-block"><a href="https://instagram.com/phf_ogun" target="_blank"><i class="uil uil-instagram"></i></a></li>
+              <li class="nav-item d-none d-md-block"><a href="https://chat.whatsapp.com/1J1CSrbQRFgFU7zRl6DhD1" target="_blank"><i class="uil uil-whatsapp"></i></a></li>
               <li class="nav-item d-lg-none">
                 <button class="hamburger offcanvas-nav-btn"><span></span></button>
               </li>

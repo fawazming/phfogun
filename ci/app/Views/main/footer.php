@@ -7,10 +7,10 @@
           <img class="mb-4" src="<?=base_url('assets/img/phf_logo_dark.png')?>" width="150px" style="background-blend-mode: multiply;" alt="" />
           <p class="mb-4">© 2023 PHF Ogun <br class="d-none d-lg-block" />All rights reserved.</p>
           <nav class="nav social social-white">
-            <a href="https://twitter.com/mssnremo"><i class="uil uil-twitter"></i></a>
-            <a href="https://facebook.com/mssnremo"><i class="uil uil-facebook-f"></i></a>
-            <a href="https://instagram.com/mssnremo"><i class="uil uil-instagram"></i></a>
-            <a href="https://wa.me/2349031306022"><i class="uil uil-whatsapp"></i></a>
+            <a href="https://twitter.com/ogunphf"><i class="uil uil-twitter"></i></a>
+            <a href="https://facebook.com/phfogun.org"><i class="uil uil-facebook-f"></i></a>
+            <a href="https://instagram.com/phf_ogun"><i class="uil uil-instagram"></i></a>
+            <a href="https://chat.whatsapp.com/1J1CSrbQRFgFU7zRl6DhD1"><i class="uil uil-whatsapp"></i></a>
           </nav>
           <!-- /.social -->
         </div>
@@ -21,7 +21,7 @@
         <div class="widget">
           <h4 class="widget-title text-white mb-3">Get in Touch</h4>
           <address class="pe-xl-15 pe-xxl-17">Istijaba Central Mosque, Behind Health Centre, Obada-Oko, Abeokuta Ogun State</address>
-          <a href="mailto:mssnremoareacouncil@gmail.com">phfogun@gmail.com</a><br /> +234 906 564 4640
+          <a href="mailto:phfogun@gmail.com">phfogun@gmail.com</a><br /> +234 906 564 4640
         </div>
         <!-- /.widget -->
       </div>
